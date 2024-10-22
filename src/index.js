@@ -1,1 +1,5 @@
-console.log('Hello JS Worker CLI!')
+export async function main(argv) {
+  try {
+    console.log('JWC');
+  } catch {}
+}
