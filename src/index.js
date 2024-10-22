@@ -1,5 +1,8 @@
+import yargs from 'yargs';
+
 export async function main(argv) {
   try {
-    console.log('JWC');
+    const jwc = yargs(argv).strict().scriptName('jwc').wrap(null);;
+    await jwc.parse();
   } catch {}
 }
