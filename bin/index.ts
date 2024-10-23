@@ -9,7 +9,7 @@ function main() {
       '--no-warnings',
       '--experimental-vm-modules',
       ...process.execArgv,
-      path.join(__dirname, './cli.js'),
+      path.join(__dirname, './jwc.js'),
       ...process.argv.slice(2),
     ],
     { stdio: ['inherit', 'inherit', 'inherit', 'ipc'] },
