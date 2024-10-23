@@ -3,7 +3,7 @@ import type { Argv } from 'yargs';
 export function initOptions(yargs: Argv) {
   return yargs
     .positional('name', {
-      describe: 'The name of your EdgeFunction',
+      describe: 'The name of your worker',
       type: 'string',
     })
     .option('y', {
