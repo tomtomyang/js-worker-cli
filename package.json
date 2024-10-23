@@ -2,19 +2,18 @@
   "name": "js-worker-cli",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tomtomyang/js-worker-cli.git"
-  },
-  "keywords": [],
   "author": "tomtomyang@tencent.com",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tomtomyang/js-worker-cli/issues"
-  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "typescript",
+    "javascript",
+    "worker",
+    "cli"
+  ],
+  "bin": "./dist/index.js",
+  "files": ["dist"],
   "scripts": {
-    "clean": "rimraf ./jwc-dist ./jwc-bin",
+    "clean": "rimraf ./dist",
     "bundle": "node -r esbuild-register ./script/bundle.ts",
     "build": "npm run clean && npm run bundle"
   },
@@ -34,5 +33,12 @@
     "ts-jest": "^29.1.1",
     "typescript": "~5.3.0",
     "yargs": "^17.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomtomyang/js-worker-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tomtomyang/js-worker-cli/issues"
   }
 }
