@@ -1,7 +1,7 @@
 {
   "name": "js-worker-cli",
   "version": "0.0.1",
-  "description": "",
+  "description": "Comprehensive JS Worker Development CLI Tool",
   "author": "tomtomyang@tencent.com",
   "license": "UNLICENSED",
   "keywords": [
@@ -10,7 +10,7 @@
     "worker",
     "cli"
   ],
-  "bin": "./dist/index.js",
+  "bin": "./dist/bin.js",
   "files": [
     "dist",
     "README.md",
