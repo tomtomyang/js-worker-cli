@@ -1,7 +1,7 @@
 {
   "name": "js-worker-cli",
   "version": "0.0.1",
-  "description": "",
+  "description": "Comprehensive JS Worker Development CLI Tool",
   "author": "tomtomyang@tencent.com",
   "license": "UNLICENSED",
   "keywords": [
@@ -10,8 +10,12 @@
     "worker",
     "cli"
   ],
-  "bin": "./dist/index.js",
-  "files": ["dist"],
+  "bin": "./dist/bin.js",
+  "files": [
+    "dist",
+    "README.md",
+    "README.zh-CN.md"
+  ],
   "scripts": {
     "clean": "rimraf ./dist",
     "bundle": "node -r esbuild-register ./script/bundle.ts",
@@ -27,6 +31,7 @@
     "esbuild-jest": "^0.5.0",
     "esbuild-register": "^3.4.2",
     "jest": "^29.6.4",
+    "js-worker-sandbox": "^2.0.0",
     "mock-socket": "^9.3.1",
     "prettier": "^3.0.3",
     "rimraf": "^5.0.1",

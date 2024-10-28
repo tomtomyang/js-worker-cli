@@ -23,7 +23,7 @@ async function bundle() {
     esbuild.build({
       ...ESBUILD_CONFIG,
       entryPoints: ['./bin/index.ts'],
-      outfile: './dist/index.js',
+      outfile: './dist/bin.js',
     }),
   ]);
 }
